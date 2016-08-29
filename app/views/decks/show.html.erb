@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @deck.name %>
+</p>
+
+<p>
+  <strong>These Are All the cards in the <%= @deck.name %> deck</strong>
+  <br>
+  Loop through all the cards in that deck here.
+</p>
+
+<%= link_to 'Edit', edit_deck_path(@deck) %> |
+<%= link_to 'Back', decks_path %>
